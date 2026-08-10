@@ -76,9 +76,5 @@ This notebook was built for **Google Colab** and expects the dataset at a Colab-
 4. Run the cell. Console output will print baseline and resampled confusion matrices, followed by comparison tables (`TABLE 4.1`, `TABLE 4.6`, `TABLE 4.11`), and save all results to `model_results_all.csv`.
 To run locally instead of Colab, change `DATA_PATH` to a local file path and ensure the CSV is available at that location.
  
-## ⚠️ Known Issues
- 
-- **Indentation error in the current source:** the code around the `TABLE: ALL MODEL RESULTS` print block has inconsistent indentation (an `if TABULATE_AVAILABLE:` line indented deeper than the preceding statement with no block opener), which raises an `IndentationError` if run as currently committed. This needs a fix before the notebook will execute top to bottom.
-- **Stored output is stale:** the notebook's saved output includes `====` section separators that are not present anywhere in the current source code, meaning the output shown was captured from an earlier version of the code prior to a later edit. Re-run and re-save the notebook after fixing the indentation issue above so the displayed output matches the actual code.
-- **Hardcoded Colab path:** `DATA_PATH` points to `/content/...` with a `# TODO` comment — must be edited before running outside of a fresh Colab upload.
+
  
